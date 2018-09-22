@@ -36,12 +36,10 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
     "build",
     "example",
     "src",
     "tests",
-    "package.json",
-    "Gruntfile.js"
+    "package.json"
   ]
 }

@@ -3,7 +3,7 @@
  * @param {string} message
  * @constructor
  */
-function PSVError(message) {
+export function PSVError(message) {
   this.message = message;
 
   // Use V8's native method if available, otherwise fallback
@@ -18,10 +18,3 @@ function PSVError(message) {
 PSVError.prototype = Object.create(Error.prototype);
 PSVError.prototype.name = 'PSVError';
 PSVError.prototype.constructor = PSVError;
-
-/**
- * @summary exposes {@link PSVError}
- * @memberof PhotoSphereViewer
- * @readonly
- */
-PhotoSphereViewer.Error = PSVError;
